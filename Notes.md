@@ -27,4 +27,3 @@
 3. Install Mocha and Chai using npm install --save-dev mocha chai 
 4. Create a folder for your source code (in this case its called src) 
 5. Create a main.js file for your code include module.exports = name-of-function;  so the function will be available globally. 
-6. 
