@@ -27,3 +27,25 @@
 3. Install Mocha and Chai using npm install --save-dev mocha chai 
 4. Create a folder for your source code (in this case its called src) 
 5. Create a main.js file for your code include module.exports = name-of-function;  so the function will be available globally. 
+
+## More About Chai
+- Eqaul vs Eql
+    - Equal checks to see if the two values/entries are strcictly equal. 
+        - Meaning that the values are the same as well as their datatypes. 
+        - Ex: 
+            - `expect(8).to.equal(8);` => results in a passed test
+            - `expect(9).to.equal(8);` => results in a failed test
+    - Eql checks to see if the two values/entries are deeply equal. 
+        - Meaning that the values share the same proberties and values. 
+        - Used when working with objects
+        - Ex:
+            - `expect({name: "Guy", score: 9.8}).to.eql({name: "Guy", score: 9.8});` => results in a passed test
+            - `expect({name: "Other Guy", score: 8.8}).to.eql({name: "Guy", score: 9.8});` => results in a failed test 
+            - `expect({name: "Guy", score: 9.8}).to.equal({name: "Guy", score: 9.8});` => results in a failed test because the two values are not the same object
+- `to.be.a()` method
+    - Allows you to test if the tested value result matches the datatype of the expected value.
+    - Ex:
+        - `expect("Score").to.be.a("string");` Checks to see if the tested value is a string
+        - `expect(10).to.be.a("number");` Checks to see if the tested value is a number
+        - `expect({}).to.be.an("object");` Checks to see if the tested value is an object
+
