@@ -49,3 +49,15 @@
         - `expect(10).to.be.a("number");` Checks to see if the tested value is a number
         - `expect({}).to.be.an("object");` Checks to see if the tested value is an object
 
+## Working with Jest
+- Jest is a JavaScript testing framework developed by Facebook. 
+- Jest works very similarly to the Mocha and Chai
+- You can create and use `describe()` and `it()` functions. 
+    - Note: 
+        - `describe()` function allows you to grup a set of related tests together. 
+        - `it()` function is usually nested within the `describe()` which describes the steps for testing your function. 
+        - `test()` function can be used instead of the `it()` function. Both are vaild. 
+- Jest uses a `expect()` to test values
+    - Ex:
+        - `expect(1 + 1).to.equal(2);` => Tests to see if 1 + 1 equals 2. 
+        - `expect(1 + 1).toBe(2);` => Also tests to see if 1 +1 equals 2. 
