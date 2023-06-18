@@ -61,3 +61,13 @@
     - Ex:
         - `expect(1 + 1).to.equal(2);` => Tests to see if 1 + 1 equals 2. 
         - `expect(1 + 1).toBe(2);` => Also tests to see if 1 +1 equals 2. 
+
+## Coverage 
+- When building tests for functions, you want to cover as many cases as possible increasing your CODE COVERAGE
+    - Code Coverage tools work by looking at individual lines, functions, and paths that code can take, and comparing those to what you test. 
+### Installing code coverage tools 
+- The nyc package integrate code coverage tools into your workflow.
+    - `npm install --save-dev nyc` => installs the nyc package
+    - `npm i -D nyc or yarn add -D nyc` => installs the nyc package 
+- As you're building functions and tests, coverage tools can guide you in the right direction when you're trying to decide what (if anything) to test next.
+- Branches are the most important focus for your coverage tool. 
